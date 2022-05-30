@@ -152,7 +152,7 @@ public class CPJDBC implements IGestioProjectes {
     }
 
     @Override
-    public void assignarProjecte(Usuari usuari, Projecte projecte) throws GestioProjectesException {
+    public void assignarProjecte(Usuari usuari, Projecte projecte, Rol rol) throws GestioProjectesException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -160,9 +160,19 @@ public class CPJDBC implements IGestioProjectes {
     public void desassignarProjecte(Usuari usuari, Projecte projecte) throws GestioProjectesException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    @Override
+    public List<Rol> getLlistaRols() throws GestioProjectesException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     @Override
     public Rol getRol(int id) throws GestioProjectesException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public Rol getRolAssignat(Usuari usuari, Projecte projecte) throws GestioProjectesException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
@@ -203,6 +213,4 @@ public class CPJDBC implements IGestioProjectes {
             throw new RuntimeException(e);
         }
     }
-    
-    
 }
